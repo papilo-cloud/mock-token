@@ -9,7 +9,12 @@ async function main() {
 
     const Token = await ethers.getContractFactory('MockToken');
     const token = await Token.deploy();
-    console.log(`Token address ${token.address}`)
+
+    console.log("Transaction hash:", token.deployTransaction.hash);
+    
+    await token.deployed();
+
+    console.log(`Contract deployed to: ${token.address}`)
 }
 
 main()
