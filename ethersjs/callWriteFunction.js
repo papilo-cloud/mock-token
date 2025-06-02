@@ -24,7 +24,7 @@ const callWriteFunction = async () => {
     // Getting ERC20 token symbol
     const symbol = await contract.symbol()
 
-    // Call mint function from smart contract and mint 10 token
+    // Call mint function from smart contract and mint 10000 token
     try {
         await contract.mint(wallet.address, parseUnits('10000', 18))
         console.log('MInt success!')

@@ -8,5 +8,6 @@ module.exports = {
         'function mint(address, uint256)',
         'function balanceOf(address) view returns(uint256)',
         'function totalSupply() view returns(uint256)',
+        'function transfer(address, uint256) returns(bool)'
     ])
 }
